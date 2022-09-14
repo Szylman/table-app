@@ -109,7 +109,7 @@ TableForm.propTypes = {
     action: PropTypes.func.isRequired,
     actionText: PropTypes.string.isRequired,
     status: PropTypes.string,
-    people: PropTypes.number,
+    people: PropTypes.string,
     maxPeople: PropTypes.number,
     bill: PropTypes.number,
     variant: PropTypes.string,

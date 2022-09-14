@@ -1,4 +1,5 @@
 import shortid from 'shortid';
+import { API_URL } from '../config';
 
 //selectors
 export const getAllTables = ({ tables }) => tables;
@@ -20,7 +21,7 @@ export const updateTables = payload => ({type: UPDATE_TABLES, payload})
 
 export const fetchData = () => {
     return (dispatch) => {
-        fetch('http://localhost:3131/tables')
+        fetch(API_URL+'/tables')
             .then(res => res.json())
             .then(tables => dispatch(updateTables(tables)))        
     }
@@ -35,7 +36,7 @@ export const editTableRequest = (editedTable) => {
             },
             body: JSON.stringify(editedTable),
         };
-        fetch('http://localhost:3131/tables/' + editedTable.id, options)
+        fetch(API_URL+ '/tables' + editedTable.id, options)
         .then(() => dispatch(editTable(editedTable)))
     }
 };
