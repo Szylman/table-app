@@ -1,0 +1,38 @@
+{
+  "tables": [
+    {
+      "status": "Free",
+      "people": "3",
+      "bill": 0,
+      "id": "1",
+      "maxPeople": 4
+    },
+    {
+      "status": "Free",
+      "people": 0,
+      "bill": 0,
+      "id": "2",
+      "maxPeople": 3
+    },
+    {
+      "id": "3",
+      "status": "Busy",
+      "people": 2,
+      "maxPeople": 3,
+      "bill": 45
+    },
+    {
+      "id": "4",
+      "status": "Cleaning",
+      "people": 0,
+      "maxPeople": 3,
+      "bill": 0
+    }
+  ],
+  "status": [
+    "Free",
+    "Reserved",
+    "Busy",
+    "Cleaning"
+  ]
+}
